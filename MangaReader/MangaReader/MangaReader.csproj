@@ -112,6 +112,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MangaListPage.xaml.cs">
+      <DependentUpon>MangaListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Manga.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\GeneralFunctions.cs" />
@@ -137,6 +140,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MangaListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

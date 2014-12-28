@@ -87,5 +87,9 @@ namespace MangaReader {
         private void Selection_Changed(object sender, SelectionChangedEventArgs e) {
 
         }
+
+        private void Add_Manga_Click(object sender, RoutedEventArgs e) {
+
+        }
     }
 }

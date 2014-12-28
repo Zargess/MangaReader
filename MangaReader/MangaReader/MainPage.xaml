@@ -73,5 +73,6 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+        <Button Content="Add Manga" Click="Add_Manga_Click" />
     </Grid>
 </Page>
