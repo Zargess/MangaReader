@@ -14,6 +14,14 @@
         <!-- Collection of items displayed by this page -->
         <CollectionViewSource x:Name="itemsViewSource" Source="{Binding Items}"/>
     </Page.Resources>
+    
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:ConnectionId='1' Label="Add" Icon="Add"                         />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
 
     <!--
         This grid acts as a root panel for the page that defines two rows:
@@ -32,7 +40,7 @@
         </Grid.RowDefinitions>
 
         <!-- Horizontal scrolling grid -->
-        <GridView
+        <GridView x:ConnectionId='2'
             x:Name="itemGridView"
             AutomationProperties.AutomationId="ItemsGridView"
             AutomationProperties.Name="Items"
@@ -41,6 +49,7 @@
             Padding="116,136,116,46"
             ItemsSource="{Binding Source={StaticResource itemsViewSource}}"
             SelectionMode="None"
+                                                
             IsSwipeEnabled="false">
             <GridView.ItemTemplate>
                 <DataTemplate>

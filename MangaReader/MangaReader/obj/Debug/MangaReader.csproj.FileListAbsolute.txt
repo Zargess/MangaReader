@@ -30,3 +30,15 @@ C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\q
 C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\ProjectArchitectures.txt
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaListPage.xbf
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\MangaListPage.g.i.cs
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\MangaListPage.g.cs
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\MangaListPage.xaml
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\MangaListPage.xbf
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\HtmlAgilityPack.pri
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\MangaReader.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\MangaReader.csproj.GenerateResource.Cache
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\HtmlAgilityPack.pri.xml

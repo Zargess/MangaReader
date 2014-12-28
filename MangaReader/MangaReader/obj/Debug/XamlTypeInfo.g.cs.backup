@@ -124,23 +124,21 @@ namespace MangaReader.MangaReader_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "MangaReader.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "MangaReader.ViewModels.ViewModel";
-            _typeNameTable[4] = "Object";
-            _typeNameTable[5] = "MangaReader.Common.NavigationHelper";
-            _typeNameTable[6] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[3] = "MangaReader.Common.NavigationHelper";
+            _typeNameTable[4] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[5] = "MangaReader.MangaListPage";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::MangaReader.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::MangaReader.ViewModels.ViewModel);
-            _typeTable[4] = typeof(global::System.Object);
-            _typeTable[5] = typeof(global::MangaReader.Common.NavigationHelper);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[3] = typeof(global::MangaReader.Common.NavigationHelper);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[5] = typeof(global::MangaReader.MangaListPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -176,7 +174,7 @@ namespace MangaReader.MangaReader_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::MangaReader.MainPage(); }
-        private object Activate_3_ViewModel() { return new global::MangaReader.ViewModels.ViewModel(); }
+        private object Activate_5_MangaListPage() { return new global::MangaReader.MangaListPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -191,7 +189,6 @@ namespace MangaReader.MangaReader_XamlTypeInfo
             case 0:   //  MangaReader.MainPage
                 userType = new global::MangaReader.MangaReader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_MainPage;
-                userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -205,40 +202,37 @@ namespace MangaReader.MangaReader_XamlTypeInfo
                 xamlType = new global::MangaReader.MangaReader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  MangaReader.ViewModels.ViewModel
-                userType = new global::MangaReader.MangaReader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  Object
-                xamlType = new global::MangaReader.MangaReader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 5:   //  MangaReader.Common.NavigationHelper
+            case 3:   //  MangaReader.Common.NavigationHelper
                 userType = new global::MangaReader.MangaReader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Windows.UI.Xaml.DependencyObject
+            case 4:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::MangaReader.MangaReader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  MangaReader.MangaListPage
+                userType = new global::MangaReader.MangaReader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_MangaListPage;
+                userType.AddMemberName("NavigationHelper");
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
         }
 
 
-        private object get_0_MainPage_DefaultViewModel(object instance)
+        private object get_0_MainPage_NavigationHelper(object instance)
         {
             var that = (global::MangaReader.MainPage)instance;
-            return that.DefaultViewModel;
+            return that.NavigationHelper;
         }
-        private object get_1_MainPage_NavigationHelper(object instance)
+        private object get_1_MangaListPage_NavigationHelper(object instance)
         {
-            var that = (global::MangaReader.MainPage)instance;
+            var that = (global::MangaReader.MangaListPage)instance;
             return that.NavigationHelper;
         }
 
@@ -249,16 +243,16 @@ namespace MangaReader.MangaReader_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "MangaReader.MainPage.DefaultViewModel":
-                userType = (global::MangaReader.MangaReader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MangaReader.MainPage");
-                xamlMember = new global::MangaReader.MangaReader_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "MangaReader.ViewModels.ViewModel");
-                xamlMember.Getter = get_0_MainPage_DefaultViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
             case "MangaReader.MainPage.NavigationHelper":
                 userType = (global::MangaReader.MangaReader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MangaReader.MainPage");
                 xamlMember = new global::MangaReader.MangaReader_XamlTypeInfo.XamlMember(this, "NavigationHelper", "MangaReader.Common.NavigationHelper");
-                xamlMember.Getter = get_1_MainPage_NavigationHelper;
+                xamlMember.Getter = get_0_MainPage_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MangaReader.MangaListPage.NavigationHelper":
+                userType = (global::MangaReader.MangaReader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MangaReader.MangaListPage");
+                xamlMember = new global::MangaReader.MangaReader_XamlTypeInfo.XamlMember(this, "NavigationHelper", "MangaReader.Common.NavigationHelper");
+                xamlMember.Getter = get_1_MangaListPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             }

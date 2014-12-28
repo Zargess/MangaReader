@@ -2,6 +2,7 @@
 using MangaReader.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,15 +25,7 @@ namespace MangaReader {
     /// </summary>
     public sealed partial class MainPage : Page {
         private NavigationHelper navigationHelper;
-        private ViewModel defaultViewModel = new ViewModel();
-
-        /// <summary>
-        /// This can be changed to a strongly typed view model.
-        /// </summary>
-        public ViewModel DefaultViewModel {
-            get { return this.defaultViewModel; }
-        }
-
+        
         /// <summary>
         /// NavigationHelper is used on each page to aid in navigation and 
         /// process lifetime management
@@ -45,7 +38,8 @@ namespace MangaReader {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
-            this.DataContext = DefaultViewModel;
+            this.DataContext = App.ViewModel;
+            this.NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         /// <summary>
@@ -85,11 +79,11 @@ namespace MangaReader {
         #endregion
 
         private void Selection_Changed(object sender, SelectionChangedEventArgs e) {
-
+            Debug.WriteLine("Hello");
         }
 
         private void Add_Manga_Click(object sender, RoutedEventArgs e) {
-
+            this.Frame.Navigate(typeof(MangaListPage));
         }
     }
 }

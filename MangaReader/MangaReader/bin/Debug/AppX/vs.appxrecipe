@@ -20,13 +20,17 @@
     <AppXManifest Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-12-28T15:22:15.946</Modified>
+      <Modified>2014-12-28T21:59:44.851</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.exe">
       <PackagePath>MangaReader.exe</PackagePath>
-      <Modified>2014-12-28T15:44:43.036</Modified>
+      <Modified>2014-12-28T23:20:39.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\packages\HtmlAgilityPack.1.4.9\lib\NetCore45\HtmlAgilityPack.dll">
+      <PackagePath>HtmlAgilityPack.dll</PackagePath>
+      <Modified>2014-12-28T21:00:26.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -54,15 +58,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-12-28T15:44:00.680</Modified>
+      <Modified>2014-12-28T23:11:03.990</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaListPage.xbf">
+      <PackagePath>MangaListPage.xbf</PackagePath>
+      <Modified>2014-12-28T23:11:03.997</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.xr.xml">
       <PackagePath>MangaReader.xr.xml</PackagePath>
-      <Modified>2014-12-28T15:37:21.869</Modified>
+      <Modified>2014-12-28T23:11:03.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-12-28T15:22:15.525</Modified>
+      <Modified>2014-12-28T21:59:44.374</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -52,7 +52,7 @@
         </Grid>
 
         <!-- Vertical scrolling item list -->
-        <ListView
+        <ListView x:ConnectionId='1'
             x:Name="itemListView"
             AutomationProperties.AutomationId="ItemsListView"
             AutomationProperties.Name="Items"
@@ -62,7 +62,7 @@
             Padding="120,0,0,60"
             ItemsSource="{Binding Source={StaticResource itemsViewSource}}"
             IsSwipeEnabled="False"
-            SelectionChanged="ItemListView_SelectionChanged">
+                                                            >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="6">
@@ -177,3 +177,4 @@
         </VisualStateManager.VisualStateGroups>
     </Grid>
 </Page>
+

@@ -25,14 +25,6 @@ namespace MangaReader {
     /// </summary>
     public sealed partial class MangaListPage : Page {
         private NavigationHelper navigationHelper;
-        private ObservableDictionary defaultViewModel = new ObservableDictionary();
-
-        /// <summary>
-        /// This can be changed to a strongly typed view model.
-        /// </summary>
-        public ObservableDictionary DefaultViewModel {
-            get { return this.defaultViewModel; }
-        }
 
         /// <summary>
         /// NavigationHelper is used on each page to aid in navigation and 
@@ -59,6 +51,7 @@ namespace MangaReader {
             // to change from showing two panes to showing a single pane
             Window.Current.SizeChanged += Window_SizeChanged;
             this.InvalidateVisualState();
+            this.DataContext = App.ViewModel;
         }
 
         void itemListView_SelectionChanged(object sender, SelectionChangedEventArgs e) {
