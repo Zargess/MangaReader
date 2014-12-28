@@ -19,6 +19,12 @@ namespace MangaReader.Model {
                 return "Chapter " + ChapterNumber + "/" + elements.Count;
             }
         }
+        
+        public string TotalChapters {
+            get {
+                return Chapters.ToList().Count + " Chapters";
+            }
+        }
 
         public Manga(string title, string description, string image, IEnumerable<string> chapters, int chapterNumber) {
             Title = title;
