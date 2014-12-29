@@ -33,5 +33,22 @@ namespace MangaReader.Model {
             Chapters = chapters;
             ChapterNumber = chapterNumber;
         }
+
+        public override string ToString() {
+            var res = "{";
+            res += Title + ";";
+            res += Description + ";";
+            res += ImagePath + ";[";
+
+            foreach (var link in Chapters) {
+                res += link + "#";
+            }
+
+            res += "];";
+            res += ChapterNumber + "}";
+
+
+            return res;
+        }
     }
 }

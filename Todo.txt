@@ -1,0 +1,6 @@
+* Make the generating of mangalist into a thread not async method
+* Make a thread that monitors new chapters for subscriped mangas and notify the user when new chapters have been uploaded
+* Generate the mangalist from another program and save the combined manga string when done. Put this into the constants. 
+* When used for the first time the app will save this string into a file. 
+* Make an update button in the mangalistpage that finds mangas that are not in the list and then adds this string to the file.
+* Do call the update button the first time the app is used to ensure that all mangas have been generated.

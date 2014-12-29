@@ -15,7 +15,14 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace MangaReader.Utility {
     public class GeneralFunctions {
-        public static List<Manga> GenerateMangaList() {
+        public static async void GenerateMangaListAndSaveResult() {
+            var list = await Task.Run(() => GenerateMangaList());
+            foreach (var manga in list) {
+                App.ViewModel.AllMangas.Add(manga);
+            }
+        }
+
+        private static async Task<List<Manga>> GenerateMangaList() {
             var res = new List<Manga>();
             var doc = new HtmlDocument();
             doc.LoadHtml(GetHtml(Constants.MANGALIST));
@@ -37,7 +44,6 @@ namespace MangaReader.Utility {
                 break;
             }
 
-            ApplicationDataContainer setting = ApplicationData.Current.LocalSettings;
 
             return res;
         }

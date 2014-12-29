@@ -1,0 +1,9 @@
+view-source:http://www.mangareader.net/alphabetical
+view-source:http://www.mangareader.net/golden-time-umechazuke
+view-source:http://www.mangareader.net/530/the-breaker.html
+view-source:http://www.mangareader.net/530-30461-1/the-breaker/chapter-7.html
+http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh771188.aspx
+http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh758325.aspx#creating_a_file
+http://msdn.microsoft.com/en-us/library/windows/apps/hh464924.aspx
+http://channel9.msdn.com/Series/Windows-Store-apps-for-Absolute-Beginners-with-C-/Part-12-Working-with-Async-Methods-in-the-Windows-Runtime
+http://msdn.microsoft.com/en-us/library/windows/apps/hh771189.aspx
