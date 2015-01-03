@@ -4,3 +4,4 @@
 * When used for the first time the app will save this string into a file. 
 * Make an update button in the mangalistpage that finds mangas that are not in the list and then adds this string to the file.
 * Do call the update button the first time the app is used to ensure that all mangas have been generated.
+* Lav et proxy mønster til mangalist sådan at alt ikke skal loades på en gang
