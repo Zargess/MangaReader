@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>ZARGESS-TAB</Machine>
+    <Machine>WIN-N1DV054M0GV</Machine>
     <WindowsUser>Marcus</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
@@ -37,6 +37,9 @@
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\FodyWeavers.xml">
+      <PackagePath>FodyWeavers.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>

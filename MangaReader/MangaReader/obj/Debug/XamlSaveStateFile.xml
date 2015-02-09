@@ -1,6 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\marcus\documents\github\mangareader\mangareader\mangareader\obj\debug\intermediatexaml\mangareader.exe" HashGuid="2333cc30-db81-e55c-9606-c6cc8808de08" />
+    <LocalAssembly PathName="c:\users\marcus\documents\github\mangareader\mangareader\mangareader\obj\debug\intermediatexaml\mangareader.exe" HashGuid="1a0478d1-b67e-3565-1e5b-4cebdfe73076" />
     <ReferenceAssembly PathName="c:\users\marcus\documents\github\mangareader\mangareader\packages\htmlagilitypack.1.4.9\lib\netcore45\htmlagilitypack.dll" HashGuid="e8cf0f9d-ac45-cdb5-bce5-7ce81a506bdf" />
+    <ReferenceAssembly PathName="c:\users\marcus\documents\github\mangareader\mangareader\packages\propertychanged.fody.1.49.0\lib\portable-net4+sl4+wp8+win8+wpa81+monoandroid16+monotouch40\propertychanged.dll" HashGuid="315aae2c-f18e-24f8-38d7-dd48761a922c" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

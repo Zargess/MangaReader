@@ -583,3 +583,6 @@ namespace MangaReader.MangaReader_XamlTypeInfo
 
 
 
+
+
+

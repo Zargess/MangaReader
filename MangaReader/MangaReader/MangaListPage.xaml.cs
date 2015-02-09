@@ -1,4 +1,5 @@
 ﻿using MangaReader.Common;
+using MangaReader.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -58,6 +59,8 @@ namespace MangaReader {
             if (this.UsingLogicalPageNavigation()) {
                 this.navigationHelper.GoBackCommand.RaiseCanExecuteChanged();
             }
+            var manga = itemListView.SelectedItem as Manga;
+            manga.Load();
         }
 
         /// <summary>
@@ -207,6 +210,9 @@ namespace MangaReader {
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
             navigationHelper.OnNavigatedTo(e);
+            App.ViewModel.LoadMangaList();
+            var manga = itemListView.SelectedItem as Manga;
+            //manga.Load();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e) {

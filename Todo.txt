@@ -5,3 +5,7 @@
 * Make an update button in the mangalistpage that finds mangas that are not in the list and then adds this string to the file.
 * Do call the update button the first time the app is used to ensure that all mangas have been generated.
 * Lav et proxy mønster til mangalist sådan at alt ikke skal loades på en gang
+* Work on the Manga class and make the GeneralFucktions class better
+* Make a file for caching the title, description, image path and last chapter read.
+* Make the load method create a new thread that updates the information based on the result from the website
+* Make each property in the Manga class invoke PropertyChanged

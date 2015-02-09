@@ -55,6 +55,9 @@ namespace MangaReader {
         /// session.  The state will be null the first time a page is visited.</param>
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e) {
             // TODO: Assign a bindable collection of items to this.DefaultViewModel["Items"]
+            foreach (var manga in App.ViewModel.Items) {
+                manga.Load();
+            }
         }
 
         #region NavigationHelper registration

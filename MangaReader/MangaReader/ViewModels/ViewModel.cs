@@ -1,4 +1,5 @@
-﻿using MangaReader.Model;
+﻿using MangaReader.Interfaces;
+using MangaReader.Model;
 using MangaReader.Utility;
 using System;
 using System.Collections.Generic;
@@ -10,15 +11,35 @@ using System.Threading.Tasks;
 
 namespace MangaReader.ViewModels {
     public class ViewModel {
-        public ObservableCollection<Manga> Items { get; set; }
-        public ObservableCollection<Manga> AllMangas { get; set; }
+        public ObservableCollection<IManga> Items { get; set; }
+        public ObservableCollection<IManga> AllMangas { get; set; }
 
         public ViewModel() {
-            Items = new ObservableCollection<Manga>();
-            AllMangas = new ObservableCollection<Manga>();
-            Items.Add(new Manga("The Breaker", "Test", "http://s4.mangareader.net/cover/the-breaker/the-breaker-l0.jpg", new List<string>(), 1));
-            foreach (var item in Items) {
-                Debug.WriteLine(item);
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
+            Items = new ObservableCollection<IManga>();
+            AllMangas = new ObservableCollection<IManga>();
+            //LoadMangaList();
+            //Task.Run(() => LoadSubscribedMangas());
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
+            watch.Stop();
+            Debug.WriteLine(watch.ElapsedMilliseconds);
+        }
+
+        private async void LoadSubscribedMangas() {
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
+            Items.Add(new Manga("The Breaker: New Waves", "http://www.mangareader.net/the-breaker-new-waves"));
+        }
+
+        public async void LoadMangaList() {
+            if (AllMangas.Count > 0) return;
+            var list = await GeneralFunctions.GenerateMangaListAndSaveResult();
+            foreach (var manga in list) {
+                AllMangas.Add(manga);
             }
         }
     }

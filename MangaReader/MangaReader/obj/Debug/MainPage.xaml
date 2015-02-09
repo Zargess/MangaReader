@@ -14,7 +14,7 @@
         <!-- Collection of items displayed by this page -->
         <CollectionViewSource x:Name="itemsViewSource" Source="{Binding Items}"/>
     </Page.Resources>
-    
+
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.SecondaryCommands>
@@ -29,6 +29,10 @@
         * Row 1 contains the rest of the page layout
     -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="275*"/>
+            <ColumnDefinition Width="1091*"/>
+        </Grid.ColumnDefinitions>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -50,7 +54,7 @@
             ItemsSource="{Binding Source={StaticResource itemsViewSource}}"
             SelectionMode="None"
                                                 
-            IsSwipeEnabled="false">
+            IsSwipeEnabled="false" Grid.ColumnSpan="2">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <Grid HorizontalAlignment="Left" Width="250" Height="250">
@@ -59,7 +63,7 @@
                         </Border>
                         <StackPanel VerticalAlignment="Bottom" Background="{ThemeResource ListViewItemOverlayBackgroundThemeBrush}">
                             <TextBlock Text="{Binding Title}" Foreground="{ThemeResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource BaseTextBlockStyle}" Height="60" Margin="15,0,15,0" FontWeight="SemiBold"/>
-                            <TextBlock Text="{Binding CurrentChapter}" Foreground="{ThemeResource ListViewItemOverlaySecondaryForegroundThemeBrush}" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="NoWrap" Margin="15,0,15,10" FontSize="14"/>
+                            <TextBlock Text="{Binding LastChapterRead}" Foreground="{ThemeResource ListViewItemOverlaySecondaryForegroundThemeBrush}" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="NoWrap" Margin="15,0,15,10" FontSize="14"/>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
@@ -67,7 +71,7 @@
         </GridView>
 
         <!-- Back button and page title -->
-        <Grid>
+        <Grid Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
