@@ -88,6 +88,7 @@ namespace MangaReader.Model {
         }
 
         public async void Load() {
+            if (!GeneralFunctions.IsConnectedToInternet()) return;
             var info = await _thread.Load();
             Description = info[0];
             ImagePath = info[1];

@@ -20,7 +20,7 @@ namespace MangaReader.ViewModels {
             Items = new ObservableCollection<IManga>();
             AllMangas = new ObservableCollection<IManga>();
             // TODO : Load kun hvis man har netværks forbindelse
-            LoadMangaList();
+            if (GeneralFunctions.IsConnectedToInternet()) LoadMangaList();
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));

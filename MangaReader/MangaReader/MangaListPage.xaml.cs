@@ -210,7 +210,7 @@ namespace MangaReader {
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
             navigationHelper.OnNavigatedTo(e);
-            App.ViewModel.LoadMangaList();
+            //App.ViewModel.LoadMangaList();
             var manga = itemListView.SelectedItem as Manga;
             //manga.Load();
         }

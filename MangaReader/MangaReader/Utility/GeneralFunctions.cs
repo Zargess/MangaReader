@@ -10,6 +10,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Networking.Connectivity;
 using Windows.Storage;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
@@ -71,6 +72,12 @@ namespace MangaReader.Utility {
             using (StreamReader reader = new StreamReader(stream)) {
                 return reader.ReadToEnd();
             }
+        }
+
+        public static bool IsConnectedToInternet() {
+            var connectionprofile = NetworkInformation.GetInternetConnectionProfile();
+            if (connectionprofile == null) return false;
+            return connectionprofile.GetNetworkConnectivityLevel() == NetworkConnectivityLevel.InternetAccess;
         }
     }
 }
