@@ -25,7 +25,8 @@ namespace MangaReader.Utility {
         private static async Task<List<IManga>> GenerateMangaList() {
             var res = new List<IManga>();
             var doc = new HtmlDocument();
-            doc.LoadHtml(GetHtml(Constants.MANGALIST));
+            var html = await GetHtml(Constants.MANGALIST);
+            doc.LoadHtml(html);
 
             var mangalists = FindNodes(doc, "ul", "class", "series_alpha");
             var mangalinks = new List<string>();
@@ -61,13 +62,12 @@ namespace MangaReader.Utility {
             return doc.DocumentNode.Descendants(tag).Where(x => x.Attributes.Contains(attribute) && x.Attributes[attribute].Value.Contains(attrvalue));
         }
 
-        public static string GetHtml(string link) {
+        public static async Task<string> GetHtml(string link) {
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(link);
             request.Method = "GET";
-            var task = request.GetResponseAsync();
-            task.Wait();
-            var res = task.Result;
-            using (Stream stream = res.GetResponseStream())
+            var response = await request.GetResponseAsync();
+            
+            using (Stream stream = response.GetResponseStream())
             using (StreamReader reader = new StreamReader(stream)) {
                 return reader.ReadToEnd();
             }

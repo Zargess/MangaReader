@@ -19,8 +19,8 @@ namespace MangaReader.ViewModels {
             watch.Start();
             Items = new ObservableCollection<IManga>();
             AllMangas = new ObservableCollection<IManga>();
-            //LoadMangaList();
-            //Task.Run(() => LoadSubscribedMangas());
+            // TODO : Load kun hvis man har netværks forbindelse
+            LoadMangaList();
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
@@ -29,7 +29,7 @@ namespace MangaReader.ViewModels {
             Debug.WriteLine(watch.ElapsedMilliseconds);
         }
 
-        private async void LoadSubscribedMangas() {
+        private void LoadSubscribedMangas() {
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
             Items.Add(new Manga("The Breaker: New Waves", "http://www.mangareader.net/the-breaker-new-waves"));

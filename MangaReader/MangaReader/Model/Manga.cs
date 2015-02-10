@@ -75,10 +75,11 @@ namespace MangaReader.Model {
             var res = "{";
             res += Title + ";";
             res += Description + ";";
+            res += LastChapterRead + ";";
             res += ImagePath + ";[";
 
             foreach (var link in Chapters) {
-                res += link + "#";
+                res += link + " ";
             }
 
             res += "]}";
@@ -97,6 +98,15 @@ namespace MangaReader.Model {
         private void RaisePropertyChanged(string name) {
             if (PropertyChanged == null) return;
             PropertyChanged(this, new PropertyChangedEventArgs(name));
+        }
+
+        public override bool Equals(object obj) {
+            if (obj == this) return true;
+            if (obj == null) return false;
+            if (this.GetType() != obj.GetType()) return false;
+            var other = obj as Manga;
+            if (other == null) return false;
+            return _url == other._url;
         }
     }
 }
