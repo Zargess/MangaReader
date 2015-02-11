@@ -17,16 +17,11 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace MangaReader.Utility {
     public class GeneralFunctions {
-        public static async Task<List<IManga>> GenerateMangaListAndSaveResult() {
-            var list = await GenerateMangaList();
-            // TODO : Save result
-            return list;
-        }
 
-        private static async Task<List<IManga>> GenerateMangaList() {
+        public static async Task<List<IManga>> GenerateMangaListAsync() {
             var res = new List<IManga>();
             var doc = new HtmlDocument();
-            var html = await GetHtml(Constants.MANGALIST);
+            var html = await GetHtmlAsync(Constants.MANGALIST);
             doc.LoadHtml(html);
 
             var mangalists = FindNodes(doc, "ul", "class", "series_alpha");
@@ -63,7 +58,7 @@ namespace MangaReader.Utility {
             return doc.DocumentNode.Descendants(tag).Where(x => x.Attributes.Contains(attribute) && x.Attributes[attribute].Value.Contains(attrvalue));
         }
 
-        public static async Task<string> GetHtml(string link) {
+        public static async Task<string> GetHtmlAsync(string link) {
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(link);
             request.Method = "GET";
             var response = await request.GetResponseAsync();

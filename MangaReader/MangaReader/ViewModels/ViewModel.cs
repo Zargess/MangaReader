@@ -20,7 +20,7 @@ namespace MangaReader.ViewModels {
             Items = new ObservableCollection<IManga>();
             AllMangas = new ObservableCollection<IManga>();
             // TODO : Load kun hvis man har netværks forbindelse
-            if (GeneralFunctions.IsConnectedToInternet()) LoadMangaList();
+            if (GeneralFunctions.IsConnectedToInternet()) LoadMangaListAsync();
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
@@ -35,9 +35,9 @@ namespace MangaReader.ViewModels {
             Items.Add(new Manga("The Breaker: New Waves", "http://www.mangareader.net/the-breaker-new-waves"));
         }
 
-        public async void LoadMangaList() {
+        public async void LoadMangaListAsync() {
             if (AllMangas.Count > 0) return;
-            var list = await GeneralFunctions.GenerateMangaListAndSaveResult();
+            var list = await GeneralFunctions.GenerateMangaListAsync();
             foreach (var manga in list) {
                 AllMangas.Add(manga);
             }

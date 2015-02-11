@@ -4,6 +4,7 @@ using MangaReader.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -89,11 +90,15 @@ namespace MangaReader.Model {
 
         public async void Load() {
             if (!GeneralFunctions.IsConnectedToInternet()) return;
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             var info = await _thread.Load();
             Description = info[0];
             ImagePath = info[1];
             var chapters = info[2].Split(';').ToList();
             Chapters = chapters;
+            watch.Stop();
+            Debug.WriteLine("Manga loaded after " + watch.ElapsedMilliseconds + " milliseconds");
         }
 
         private void RaisePropertyChanged(string name) {

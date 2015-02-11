@@ -123,6 +123,7 @@
       <RootProperty Name="Command" />
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">

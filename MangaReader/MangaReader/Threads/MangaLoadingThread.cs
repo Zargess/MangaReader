@@ -20,7 +20,7 @@ namespace MangaReader.Threads {
 
         public async Task<string[]> Load() {
             var doc = new HtmlDocument();
-            var html = await GeneralFunctions.GetHtml(_path);
+            var html = await GeneralFunctions.GetHtmlAsync(_path);
             doc.LoadHtml(html);
 
             var descriptions = GeneralFunctions.FindNodes(doc, "div", "id", "readmangasum").ToList()[0].Descendants("p").ToList()[0].InnerText;

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>WIN-N1DV054M0GV</Machine>
-    <WindowsUser>Marcus</WindowsUser>
+    <Machine>ZARGESS-STATION</Machine>
+    <WindowsUser>MFH</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>f9040010-0454-4c50-a0f4-0ae42d6030ab</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>28F37BD1CEAEF69FB621959C4D241A28644C050951B39D26B5165262BC20C856</RegisteredManifestChecksum>
+    <IntermediateOutputPath>D:\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>FECF03381474F27870C1745584E0ECA6C6F34B58F89151128B8C8C2E0B465BD8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f9040010-0454-4c50-a0f4-0ae42d6030ab_1.0.0.0_neutral__3mybz78na6kqt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f9040010-0454-4c50-a0f4-0ae42d6030ab_3mybz78na6kqt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f9040010-0454-4c50-a0f4-0ae42d6030ab</RegisteredPackageID>
@@ -17,64 +17,64 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-07T18:13:32.878</Modified>
+      <Modified>2015-02-11T07:27:51.240</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.exe">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.exe">
       <PackagePath>MangaReader.exe</PackagePath>
-      <Modified>2015-02-10T17:15:12.360</Modified>
+      <Modified>2015-02-11T09:56:23.129</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\packages\HtmlAgilityPack.1.4.9\lib\NetCore45\HtmlAgilityPack.dll">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\packages\HtmlAgilityPack.1.4.9\lib\NetCore45\HtmlAgilityPack.dll">
       <PackagePath>HtmlAgilityPack.dll</PackagePath>
-      <Modified>2015-02-06T14:14:18.248</Modified>
+      <Modified>2015-02-09T22:19:11.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-06T14:14:17.763</Modified>
+      <Modified>2015-02-09T22:19:11.393</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-06T14:14:17.764</Modified>
+      <Modified>2015-02-09T22:19:11.393</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-06T14:14:17.766</Modified>
+      <Modified>2015-02-09T22:19:11.394</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-06T14:14:17.768</Modified>
+      <Modified>2015-02-09T22:19:11.395</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\FodyWeavers.xml">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\FodyWeavers.xml">
       <PackagePath>FodyWeavers.xml</PackagePath>
-      <Modified>2015-02-06T21:21:27.268</Modified>
+      <Modified>2015-02-09T22:19:11.411</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-02-06T20:22:55.939</Modified>
+      <Modified>2015-02-11T07:27:49.867</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-02-07T18:15:00.719</Modified>
+      <Modified>2015-02-11T07:27:49.868</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaListPage.xbf">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaListPage.xbf">
       <PackagePath>MangaListPage.xbf</PackagePath>
-      <Modified>2015-02-06T16:54:17.906</Modified>
+      <Modified>2015-02-11T07:48:16.437</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.xr.xml">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.xr.xml">
       <PackagePath>MangaReader.xr.xml</PackagePath>
-      <Modified>2015-02-07T18:15:00.703</Modified>
+      <Modified>2015-02-11T07:44:42.028</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-07T18:13:32.753</Modified>
+      <Modified>2015-02-11T07:44:43.599</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
