@@ -8,5 +8,6 @@ namespace MangaReader.Utility {
     public class Constants {
         public static readonly string WEBSITE = "http://www.mangareader.net";
         public static readonly string MANGALIST = "http://www.mangareader.net/alphabetical";
+        public static readonly string CATEGORIES = "http://www.mangareader.net/search";
     }
 }

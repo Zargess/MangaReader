@@ -1,8 +1,6 @@
 ﻿using MangaReader.Common;
-using MangaReader.ViewModels;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -23,9 +21,17 @@ namespace MangaReader {
     /// A page that displays a collection of item previews.  In the Split Application this page
     /// is used to display and select one of the available groups.
     /// </summary>
-    public sealed partial class MainPage : Page {
+    public sealed partial class AlphabeticalSelectionPage : Page {
         private NavigationHelper navigationHelper;
-        
+        private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
+        /// <summary>
+        /// This can be changed to a strongly typed view model.
+        /// </summary>
+        public ObservableDictionary DefaultViewModel {
+            get { return this.defaultViewModel; }
+        }
+
         /// <summary>
         /// NavigationHelper is used on each page to aid in navigation and 
         /// process lifetime management
@@ -34,12 +40,11 @@ namespace MangaReader {
             get { return this.navigationHelper; }
         }
 
-        public MainPage() {
+        public AlphabeticalSelectionPage() {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.DataContext = App.ViewModel;
-            this.NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         /// <summary>
@@ -54,9 +59,7 @@ namespace MangaReader {
         /// a dictionary of state preserved by this page during an earlier
         /// session.  The state will be null the first time a page is visited.</param>
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e) {
-            foreach (var manga in App.ViewModel.Items) {
-                manga.Load();
-            }
+            // TODO: Assign a bindable collection of items to this.DefaultViewModel["Items"]
         }
 
         #region NavigationHelper registration
@@ -80,12 +83,5 @@ namespace MangaReader {
 
         #endregion
 
-        private void Selection_Changed(object sender, SelectionChangedEventArgs e) {
-            Debug.WriteLine("Hello");
-        }
-
-        private void Add_Manga_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(AlphabeticalSelectionPage));
-        }
     }
 }

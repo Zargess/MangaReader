@@ -1,1 +1,1 @@
-D:\GitHub\MangaReader\MangaReader\MangaReader\MangaReader.csproj;neutral
+C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\MangaReader.csproj;neutral

@@ -13,12 +13,14 @@ namespace MangaReader.ViewModels {
     public class ViewModel {
         public ObservableCollection<IManga> Items { get; set; }
         public ObservableCollection<IManga> AllMangas { get; set; }
+        public ObservableCollection<string> Letters { get; set; }
 
         public ViewModel() {
             Stopwatch watch = new Stopwatch();
             watch.Start();
             Items = new ObservableCollection<IManga>();
             AllMangas = new ObservableCollection<IManga>();
+            Letters = new ObservableCollection<string>();
             // TODO : Load kun hvis man har netværks forbindelse
             if (GeneralFunctions.IsConnectedToInternet()) LoadMangaListAsync();
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
@@ -40,6 +42,10 @@ namespace MangaReader.ViewModels {
             var list = await GeneralFunctions.GenerateMangaListAsync();
             foreach (var manga in list) {
                 AllMangas.Add(manga);
+                if (String.IsNullOrEmpty(manga.Title)) continue;
+                var letter = manga.Title[0].ToString();
+                if (Letters.Contains(letter)) continue;
+                Letters.Add(letter);
             }
         }
     }

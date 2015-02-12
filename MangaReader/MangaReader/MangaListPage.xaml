@@ -52,6 +52,7 @@
         </Grid>
 
         <!-- Vertical scrolling item list -->
+        
         <ListView
             x:Name="itemListView"
             AutomationProperties.AutomationId="ItemsListView"

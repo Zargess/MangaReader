@@ -220,5 +220,9 @@ namespace MangaReader {
         }
 
         #endregion
+
+        private void SearchBox_QuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args) {
+
+        }
     }
 }
