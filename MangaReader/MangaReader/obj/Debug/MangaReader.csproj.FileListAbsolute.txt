@@ -91,3 +91,8 @@ C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\A
 C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.g.cs
 C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.xaml
 C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.xbf
+D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\AlphabeticalSelectionPage.xbf
+D:\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.g.i.cs
+D:\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.g.cs
+D:\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.xaml
+D:\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.xbf

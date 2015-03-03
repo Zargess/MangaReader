@@ -1,6 +1,7 @@
 ﻿using MangaReader.Common;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -83,5 +84,12 @@ namespace MangaReader {
 
         #endregion
 
+        private void itemGridView_Tapped(object sender, TappedRoutedEventArgs e) {
+            if (!(e.OriginalSource is Border)) return;
+            var source = e.OriginalSource as Border;
+            App.ViewModel.SelectedLetter = source.Tag as string;
+            Debug.WriteLine(App.ViewModel.SelectedLetter);
+            this.Frame.Navigate(typeof(MangaListPage));
+        }
     }
 }
