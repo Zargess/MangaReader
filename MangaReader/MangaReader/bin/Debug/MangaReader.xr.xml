@@ -9,7 +9,7 @@
     <RootPropertyPathName Name="LastChapterRead" />
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="ImagePath" />
-    <RootPropertyPathName Name="AllMangas" />
+    <RootPropertyPathName Name="SearchedMangas" />
     <RootPropertyPathName Name="SelectedItem" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Subtitle" />
@@ -178,6 +178,14 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SearchBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="QuerySubmitted" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />

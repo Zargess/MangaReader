@@ -19,6 +19,7 @@
         <CommandBar>
             <CommandBar.SecondaryCommands>
                 <AppBarButton x:ConnectionId='1' Label="Add" Icon="Add"                         />
+                <AppBarButton Label="Reload" Icon="Sync" />
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
@@ -54,6 +55,7 @@
             ItemsSource="{Binding Source={StaticResource itemsViewSource}}"
             SelectionMode="None"
                                                 
+                                        
             IsSwipeEnabled="false" Grid.ColumnSpan="2">
             <GridView.ItemTemplate>
                 <DataTemplate>

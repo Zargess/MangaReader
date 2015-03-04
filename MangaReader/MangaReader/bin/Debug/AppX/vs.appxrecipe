@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.exe">
       <PackagePath>MangaReader.exe</PackagePath>
-      <Modified>2015-02-12T17:33:25.787</Modified>
+      <Modified>2015-03-04T09:41:58.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\packages\HtmlAgilityPack.1.4.9\lib\NetCore45\HtmlAgilityPack.dll">
       <PackagePath>HtmlAgilityPack.dll</PackagePath>
@@ -66,15 +66,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-02-11T07:27:49.868</Modified>
+      <Modified>2015-03-04T09:41:58.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaListPage.xbf">
       <PackagePath>MangaListPage.xbf</PackagePath>
-      <Modified>2015-02-12T17:27:20.137</Modified>
+      <Modified>2015-03-04T09:41:58.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.xr.xml">
       <PackagePath>MangaReader.xr.xml</PackagePath>
-      <Modified>2015-02-12T17:30:37.949</Modified>
+      <Modified>2015-03-04T09:40:08.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

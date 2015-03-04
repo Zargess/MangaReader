@@ -87,8 +87,7 @@ namespace MangaReader {
         private void itemGridView_Tapped(object sender, TappedRoutedEventArgs e) {
             if (!(e.OriginalSource is Border)) return;
             var source = e.OriginalSource as Border;
-            App.ViewModel.SelectedLetter = source.Tag as string;
-            Debug.WriteLine(App.ViewModel.SelectedLetter);
+            //App.ViewModel.SelectLetter(source.Tag as string);
             this.Frame.Navigate(typeof(MangaListPage));
         }
     }

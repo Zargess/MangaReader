@@ -19,6 +19,7 @@
         <CommandBar>
             <CommandBar.SecondaryCommands>
                 <AppBarButton Label="Add" Icon="Add" Click="Add_Manga_Click" />
+                <AppBarButton Label="Reload" Icon="Sync" />
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
@@ -54,6 +55,7 @@
             ItemsSource="{Binding Source={StaticResource itemsViewSource}}"
             SelectionMode="None"
             SelectionChanged="Selection_Changed"
+            Tapped="itemGridView_Tapped"
             IsSwipeEnabled="false" Grid.ColumnSpan="2">
             <GridView.ItemTemplate>
                 <DataTemplate>

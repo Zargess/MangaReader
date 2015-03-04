@@ -60,6 +60,7 @@ namespace MangaReader {
                 this.navigationHelper.GoBackCommand.RaiseCanExecuteChanged();
             }
             var manga = itemListView.SelectedItem as Manga;
+            if (manga == null) return;
             manga.Load();
         }
 
@@ -222,7 +223,7 @@ namespace MangaReader {
         #endregion
 
         private void SearchBox_QuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args) {
-
+            App.ViewModel.Search(args.QueryText);
         }
     }
 }

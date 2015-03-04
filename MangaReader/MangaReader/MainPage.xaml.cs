@@ -85,7 +85,11 @@ namespace MangaReader {
         }
 
         private void Add_Manga_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(AlphabeticalSelectionPage));
+            this.Frame.Navigate(typeof(MangaListPage));
+        }
+
+        private void itemGridView_Tapped(object sender, TappedRoutedEventArgs e) {
+            Debug.WriteLine("Hello");
         }
     }
 }
