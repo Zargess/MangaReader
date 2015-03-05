@@ -86,11 +86,6 @@ D:\Github\MangaReader\MangaReader\MangaReader\obj\Debug\qualifiers.txt.intermedi
 D:\Github\MangaReader\MangaReader\MangaReader\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Github\MangaReader\MangaReader\MangaReader\obj\Debug\HtmlAgilityPack.pri.xml
 D:\Github\MangaReader\MangaReader\MangaReader\obj\Debug\ProjectArchitectures.txt
-C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\AlphabeticalSelectionPage.xbf
-C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.g.i.cs
-C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.g.cs
-C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.xaml
-C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.xbf
 D:\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\AlphabeticalSelectionPage.xbf
 D:\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.g.i.cs
 D:\GitHub\MangaReader\MangaReader\MangaReader\obj\Debug\AlphabeticalSelectionPage.g.cs

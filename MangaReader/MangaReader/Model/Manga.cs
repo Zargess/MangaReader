@@ -55,6 +55,8 @@ namespace MangaReader.Model {
         }
 
         private int _lastreadchapter;
+        private IMangaLoadingStrategy _loadingStrategy;
+
         public int LastChapterRead {
             get {
                 return _lastreadchapter;
@@ -65,14 +67,15 @@ namespace MangaReader.Model {
             }
         }
 
-        public Manga(string title, string path) {
+        public Manga(string title, string path, IMangaLoadingStrategy loadingStrategy) {
             Title = title;
             _url = path;
             _thread = new MangaLoadingThread(_url);
             Chapters = new List<string>();
+            _loadingStrategy = loadingStrategy;
         }
 
-        public override string ToString() {
+        /*public override string ToString() {
             var res = "{";
             res += Title + ";";
             res += Description + ";";
@@ -86,17 +89,13 @@ namespace MangaReader.Model {
             res += "]}";
 
             return res;
-        }
+        }*/
 
         public async void Load() {
             if (!GeneralFunctions.IsConnectedToInternet()) return;
             Stopwatch watch = new Stopwatch();
             watch.Start();
-            var info = await _thread.Load();
-            Description = info[0];
-            ImagePath = info[1];
-            var chapters = info[2].Split(';').ToList();
-            Chapters = chapters;
+            await _loadingStrategy.LoadAsync(this, _url);
             watch.Stop();
             Debug.WriteLine("Manga loaded after " + watch.ElapsedMilliseconds + " milliseconds");
         }

@@ -1,5 +1,6 @@
 ﻿using MangaReader.Interfaces;
 using MangaReader.Model;
+using MangaReader.Strategies.Loading.IMangas;
 using MangaReader.Utility;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml;
 
 namespace MangaReader.ViewModels {
     public class ViewModel : INotifyPropertyChanged {
@@ -25,10 +27,10 @@ namespace MangaReader.ViewModels {
             SearchedMangas = new ObservableCollection<IManga>();
             // TODO : Load kun hvis man har netværks forbindelse
             if (GeneralFunctions.IsConnectedToInternet()) LoadMangaListAsync();
-            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
-            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
-            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
-            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
             watch.Stop();
             Debug.WriteLine(watch.ElapsedMilliseconds);
         }
@@ -36,9 +38,9 @@ namespace MangaReader.ViewModels {
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void LoadSubscribedMangas() {
-            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
-            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html"));
-            Items.Add(new Manga("The Breaker: New Waves", "http://www.mangareader.net/the-breaker-new-waves"));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
+            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
+            Items.Add(new Manga("The Breaker: New Waves", "http://www.mangareader.net/the-breaker-new-waves", new MangareaderMangaLoadingStrategy()));
         }
 
         public async void LoadMangaListAsync() {

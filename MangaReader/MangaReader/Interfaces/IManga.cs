@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MangaReader.Interfaces {
     public interface IManga {
-        string Title { get; }
-        string Description { get; }
+        string Title { get; set; }
+        string Description { get; set; }
         string ImagePath { get; set; }
-        IEnumerable<string> Chapters { get; }
-        int LastChapterRead { get; }
+        IEnumerable<string> Chapters { get; set; }
+        int LastChapterRead { get; set; }
 
         void Load();
     }

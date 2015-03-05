@@ -2,6 +2,7 @@
 using MangaReader.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -62,6 +63,7 @@ namespace MangaReader {
             var manga = itemListView.SelectedItem as Manga;
             if (manga == null) return;
             manga.Load();
+            MangaPageBtn.Visibility = Visibility.Visible;
         }
 
         /// <summary>
@@ -224,6 +226,13 @@ namespace MangaReader {
 
         private void SearchBox_QuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args) {
             App.ViewModel.Search(args.QueryText);
+            MangaPageBtn.Visibility = Visibility.Collapsed;
+            foreach (var item in itemListView.Items) {
+                if (!itemListView.SelectedItems.Contains(item)) continue;
+                MangaPageBtn.Visibility = Visibility.Visible;
+                var manga = item as Manga;
+                Debug.WriteLine(manga.Title);
+            }
         }
     }
 }

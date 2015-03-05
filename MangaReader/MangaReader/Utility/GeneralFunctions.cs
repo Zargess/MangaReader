@@ -1,6 +1,7 @@
 ﻿using HtmlAgilityPack;
 using MangaReader.Interfaces;
 using MangaReader.Model;
+using MangaReader.Strategies.Loading.IMangas;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -38,7 +39,7 @@ namespace MangaReader.Utility {
         private static IManga CreateMangaFromTag(HtmlNode x) {
             var link = Constants.WEBSITE + x.Attributes["href"].Value;
             var title = x.InnerText;
-            return new Manga(title, link);
+            return new Manga(title, link, new MangareaderMangaLoadingStrategy());
         }
 
         public static string FindChapters(HtmlDocument doc) {
