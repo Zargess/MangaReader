@@ -32,7 +32,7 @@ namespace MangaReader.Utility {
                 var mangas = linktags.Select(x => CreateMangaFromTag(x));
                 res.AddRange(mangas);
             }
-            
+
             return res;
         }
 
