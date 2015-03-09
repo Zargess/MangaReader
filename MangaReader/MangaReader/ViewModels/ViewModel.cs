@@ -26,21 +26,18 @@ namespace MangaReader.ViewModels {
             AllMangas = new ObservableCollection<IManga>();
             SearchedMangas = new ObservableCollection<IManga>();
             // TODO : Load kun hvis man har netværks forbindelse
+            watch.Stop();
+            Debug.WriteLine("Loading time: " + watch.ElapsedMilliseconds);
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public async void InitAsync() {
             if (GeneralFunctions.IsConnectedToInternet()) LoadMangaListAsync();
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
             Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
-            watch.Stop();
-            Debug.WriteLine(watch.ElapsedMilliseconds);
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void LoadSubscribedMangas() {
-            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
-            Items.Add(new Manga("The Breaker", "http://www.mangareader.net/530/the-breaker.html", new MangareaderMangaLoadingStrategy()));
-            Items.Add(new Manga("The Breaker: New Waves", "http://www.mangareader.net/the-breaker-new-waves", new MangareaderMangaLoadingStrategy()));
         }
 
         public async void LoadMangaListAsync() {

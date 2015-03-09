@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-03-05T14:13:25.431</Modified>
+      <Modified>2015-03-09T11:06:23.271</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\MangaReader.exe">
       <PackagePath>MangaReader.exe</PackagePath>
-      <Modified>2015-03-05T14:13:24.321</Modified>
+      <Modified>2015-03-09T11:06:53.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\packages\HtmlAgilityPack.1.4.9\lib\NetCore45\HtmlAgilityPack.dll">
       <PackagePath>HtmlAgilityPack.dll</PackagePath>
@@ -74,7 +74,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marcus\Documents\GitHub\MangaReader\MangaReader\MangaReader\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-05T14:13:24.774</Modified>
+      <Modified>2015-03-09T11:06:22.958</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
